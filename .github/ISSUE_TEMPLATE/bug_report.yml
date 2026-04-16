@@ -1,0 +1,17 @@
+name: 🐛 Bug Report
+description: 报告一个 bug
+labels: ["bug", "needs-triage"]   # ← 这里绑定 label，提交时自动添加
+body:
+  - type: markdown
+    attributes:
+      value: "请尽量详细描述问题"
+  - type: input
+    id: title
+    attributes:
+      label: 问题标题
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 详细描述
